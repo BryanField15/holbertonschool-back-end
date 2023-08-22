@@ -17,14 +17,14 @@ if __name__ == "__main__":
     task_list = []
     for todo in user_todos:
         tasks = {
-            "task" : todo.get("title"),
-            "completed" : todo.get("completed"),
-            "username" : username
+            "task": todo.get("title"),
+            "completed": todo.get("completed"),
+            "username": username
         }
         task_list.append(tasks)
 
     final_dict = {
-         user_id : task_list
+         user_id: task_list
     }
 
     filename = user_id + ".json"
