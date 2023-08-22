@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 """Script that shows the progress of a to do list"""
+import csv
+import json
 import requests
 import sys
-import json
-import csv
+
 
 if __name__ == "__main__":
 
@@ -18,6 +19,8 @@ if __name__ == "__main__":
     user_id = sys.argv[1]
     with open(f"{user_id}.csv", 'w', newline='') as csv_file:
         fieldnames = ["userId", "username", "completed", "title"]
-        writer = csv.DictWriter(csv_file, fieldnames=fieldnames, quoting=csv.QUOTE_ALL)
+        writer = csv.DictWriter(csv_file,
+                                fieldnames=fieldnames,
+                                quoting=csv.QUOTE_ALL)
         for row in user_todos:
             writer.writerow(row)
