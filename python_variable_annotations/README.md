@@ -25,12 +25,16 @@ This repository focuses on the use of type annotations in Python 3, understandin
 - **Description:**
   Write a type-annotated function `add` that takes a float `a` and a float `b` as arguments and returns their sum as a float.
 
+---
+
 ### 1. Basic annotations - concat
 
 - **Filename:** `1-concat.py`
 
 - **Description:**
   Write a type-annotated function `concat` that takes a string `str1` and a string `str2` as arguments and returns a concatenated string.
+
+---
 
 ### 2. Basic annotations - floor
 
@@ -60,6 +64,8 @@ This repository focuses on the use of type annotations in Python 3, understandin
   - `pi`, a float with a value of 3.14
   - `i_understand_annotations`, a boolean with a value of True
   - `school`, a string with a value of “Holberton”
+
+---
 
 ### 5. Complex types - list of floats
 
